@@ -24,8 +24,8 @@ mongoose.connect(URL, {
 const connection = mongoose.connection;
 connection.once("open", () => {
     console.log("MongoDB connection success!");
-});
+})
 
 app.listen(PORT, () => {
     console.log(`Server is up and running on port number: ${PORT}`);
-}); 
+})
